@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CS50B Week04</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="../css/item2.css">
+     <script>
+function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+          
+            for (var i = 0; i < reveals.length; i++) {
+              var windowHeight = window.innerHeight;
+              var elementTop = reveals[i].getBoundingClientRect().top;
+              var elementVisible = 150;
+          
+              if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+          }
+          
+          window.addEventListener("scroll", reveal);
+        </script>
+  </head>
+  <body>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-*">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Fallout Music Co.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Featured Genres
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="roots/item1.html">Hip-Hop & Rap</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="roots/item2.html">Underground</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="roots/item3.html">Alternative</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="roots/item4.html">Oldies</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="roots/item5.html">Country</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="roots/about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+     <div class="section-full collage">
+        <div class="container-fluid ">
+            <img src="../assets/images/peakpx(63).jpg" alt="" class="img-1 reveal img-thumbnail">
+            <img src="../assets/images/peakpx(52).jpg" alt="" class="img-2  reveal img-thumbnail">
+            <img src="../assets/images/peakpx(72).jpg" alt="" class="img-3 reveal img-thumbnail">
+            <img src="../assets/images/peakpx(58).jpg" alt="" class="img-7 reveal img-thumbnail">
+            <img src="../assets/images/Screenshot 2023-09-12 12.06.39 PM.png" alt="" class="img-9 reveal img-thumbnail">
+            <h1 class="text-center">Our catalog includes these featured artists</h1>
+        
+            <p></p>
+            <img src="../assets/images/peakpx(3).jpg" alt="" class="img-4 reveal img-thumbnail">
+            <img src="../assets/images/peakpx(5).jpg" alt="" class="img-5 reveal img-thumbnail">
+            <img src="../assets/images/peakpx(56).jpg" alt="" class="img-6 reveal img-thumbnail">
+            <img src="../assets/images/peakpx(11).jpg" alt="" class="img-8 reveal img-thumbnail">
+        </div>
+       </div>
+       
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  </body>
+</html>
