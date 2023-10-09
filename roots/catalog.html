@@ -1,36 +1,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>CS50B Week04</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Monoton&family=Poiret+One&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <link rel="stylesheet" href="../css/catalog.css">
-   <script>
-function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-          
-            for (var i = 0; i < reveals.length; i++) {
-              var windowHeight = window.innerHeight;
-              var elementTop = reveals[i].getBoundingClientRect().top;
-              var elementVisible = 150;
-          
-              if (elementTop < windowHeight - elementVisible) {
-                reveals[i].classList.add("active");
-              } else {
-                reveals[i].classList.remove("active");
-              }
-            }
-          }
-          
-          window.addEventListener("scroll", reveal);
-        </script>
+  <title>Catalog List</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="header-container">
+    <div class="scroll-progress mt-1"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-*">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Fallout Music Co.</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -38,7 +29,7 @@ function reveal() {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
@@ -46,47 +37,195 @@ function reveal() {
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               Featured Genres
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="../roots/item1.html">Hip-Hop & Rap</a></li>
               <hr>
               <li><a class="dropdown-item" href="../roots/item2.html">Underground</a></li>
               <hr>
               <li><a class="dropdown-item" href="../roots/item3.html">Alternative</a></li>
               <hr>
-              <li><a class="dropdown-item" href="../roots/item4.html">Oldies</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="../roots/item5.html">Country</a></li>
+              <li><a class="dropdown-item" href="../roots/item4.html">Country</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../roots/catalog.html">Catalog List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../roots/about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="../roots/about.html">About & Credits</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-     <div class="section-full collage">
-        <div class="container-fluid ">
-            <img src="../assets/images/peakpx(63).jpg" alt="" class="img-1 reveal img-thumbnail">
-            <img src="../assets/images/peakpx(52).jpg" alt="" class="img-2  reveal img-thumbnail">
-            <img src="../assets/images/peakpx(72).jpg" alt="" class="img-3 reveal img-thumbnail">
-            <img src="../assets/images/peakpx(58).jpg" alt="" class="img-7 reveal img-thumbnail">
-            <img src="../assets/images/peakpx(43).jpg" alt="" class="img-9 reveal img-thumbnail">
-            <h1 class="text-center">Our catalog includes these featured artists</h1>
-        
-            <p></p>
-            <img src="../assets/images/peakpx(3).jpg" alt="" class="img-4 reveal img-thumbnail">
-            <img src="../assets/images/peakpx(5).jpg" alt="" class="img-5 reveal img-thumbnail">
-            <img src="../assets/images/peakpx(56).jpg" alt="" class="img-6 reveal img-thumbnail">
-            <img src="../assets/images/peakpx(11).jpg" alt="" class="img-8 reveal img-thumbnail">
-        </div>
-       </div>
-       
 
+  <div class="container">
+
+
+    <!--JumboTron -->
+    <div class="jumbotron jumbo-picture text-center mb-5 mt-5">
+      <h1 class="text-center">Catalog List</h1>
+      <p class="text-center"><strong>View my favorite artists from various genres!</strong></p>
+      <a href="../index.html" class="btn btn-light btn-lg mt-5 mb-5" tabindex="-1" role="button">Go Home</a>
+    </div>
+    <!--JumboTron End-->
+
+
+    <!--Grid System Start-->
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/peakpx(43).jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Lil Baby</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap</h6>
+            <p class="card-text">Lil Baby is one of my favorite Rap artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=lil+baby+songs&rlz=1CAHUVK_enUS1057&oq=lil+baby+so&aqs=chrome.0.69i59i433i512j0i512j69i57j0i512j46i512j0i512l3j46i512j0i512.5204j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+              role="button"><i class="fa-solid fa-music"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/peakpx(2).jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Karol G</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Reggaeton</h6>
+            <p class="card-text">Karol G is one of my favorite Reggaeton artists.</p>
+            <a href="../roots/item5.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=karol+g+songs&sca_esv=566617571&rlz=1CAHUVK_enUS1057&ei=X8kJZfe2L6iI0PEPjqalqAI&ved=0ahUKEwi34uanibeBAxUoBDQIHQ5TCSUQ4dUDCA8&uact=5&oq=karol+g+songs&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWthcm9sIGcgc29uZ3MyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyBhAAGAcYHjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiHLVD4EFi5KnABeAGQAQGYAbsDoAH1DqoBCTkuMy4wLjEuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABgNGIAEGLEDwgIHEAAYDRiABMICBxAAGIoFGEPCAgoQABiKBRixAxhDwgIIEAAYgAQYsQPCAggQABgHGB4YCuIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp&safe=active&ssui=on"
+              role="button"><i class="fa-solid fa-music"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/peakpx(80).jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Pop Smoke</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap</h6>
+            <p class="card-text">Pop Smoke is one of my favorite Rap artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=pop+smoke+songs&sca_esv=566617571&rlz=1CAHUVK_enUS1057&ei=l8kJZYy9AaWm0PEPptu6oAw&ved=0ahUKEwjM5JLCibeBAxUlEzQIHaatDsQQ4dUDCA8&uact=5&oq=pop+smoke+songs&gs_lp=Egxnd3Mtd2l6LXNlcnAiD3BvcCBzbW9rZSBzb25nczIGEAAYBxgeMgYQABgHGB4yBRAAGIAEMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgUQABiABEinHVCKBFieGnABeAGQAQCYAegBoAHlC6oBBjE0LjEuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIHEAAYigUYQ8ICChAAGIoFGLEDGEPCAgsQABiABBixAxiDAcICDhAAGIoFGLEDGIMBGJECwgILEAAYigUYsQMYkQLCAggQABiKBRiRAsICCBAAGIAEGLEDwgINEAAYDRiABBixAxiDAcICChAAGA0YgAQYsQPCAgcQABgNGIAE4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp&safe=active&ssui=on"
+              role="button"><i class="fa-solid fa-music"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Row 2 -->
+
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/babydurakwrist.jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Lil Durk</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap </h6>
+            <p class="card-text">Lil Durk is one of my favorite mixed genre artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=lil+durk&rlz=1CAHUVK_enUS1057&oq=lil+durk&aqs=chrome.0.0i271j46i131i433i512j46i512j0i131i433i650j0i512j0i3l2j69i61.1607j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+              role="button"><i class="fa-brands fa-spotify"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/peakpx(72).jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Nipsey Hussle</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap</h6>
+            <p class="card-text">Nipsey Hussle is one of my favorite Rap artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=nipsey+hussle+songs&sca_esv=566617571&rlz=1CAHUVK_enUS1057&ei=6ckJZe6aD7HI0PEPpu2owAc&ved=0ahUKEwius63pibeBAxUxJDQIHaY2CngQ4dUDCA8&uact=5&oq=nipsey+hussle+songs&gs_lp=Egxnd3Mtd2l6LXNlcnAiE25pcHNleSBodXNzbGUgc29uZ3MyDhAAGIoFGLEDGIMBGJECMgUQABiABDIGEAAYBxgeMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBRAAGIAEMgYQABgHGB4yBRAAGIAEMgUQABiABEicKFChA1iNJnABeAGQAQKYAasCoAGFFqoBBjE4LjMuNLgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIKEC4YigUYsAMYQ8ICDhAAGOQCGNYEGLAD2AEBwgIQEC4YigUYyAMYsAMYQ9gBAsICBxAAGA0YgATCAgcQABiKBRhDwgIKEAAYigUYsQMYQ8ICCxAAGIAEGLEDGIMBwgINEAAYDRiABBixAxiDAeIDBBgAIEGIBgGQBhO6BgYIARABGAm6BgYIAhABGAg&sclient=gws-wiz-serp&safe=active&ssui=on"
+              role="button"><i class="fa-brands fa-spotify"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/peakpx(54).jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Playboi Carti</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap</h6>
+            <p class="card-text">Playboi Carti is one of my favorite Rap artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=playboi+carti+songs&sca_esv=566617571&rlz=1CAHUVK_enUS1057&ei=MMoJZZmcF6Dz0PEP6fuNgAo&oq=playboi+songs&gs_lp=Egxnd3Mtd2l6LXNlcnAiDXBsYXlib2kgc29uZ3MqAggAMggQABgHGB4YCjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIFEAAYgAQyBhAAGAcYHjIGEAAYBxgeSI0lUKMDWI0bcAF4AZABAZgB9wKgAcgUqgEIMTIuNC4yLjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIKEAAYigUYsAMYQ8ICDhAAGOQCGNYEGLAD2AEBwgIQEC4YigUYyAMYsAMYQ9gBAsICDRAAGA0YgAQYsQMYgwHCAgcQABgNGIAEwgIKEAAYigUYsQMYQ8ICBxAAGIoFGEPCAggQABiKBRiRAsICCxAAGIAEGLEDGIMBwgIJEAAYigUYChhDwgIIEAAYgAQYsQPCAggQLhiABBixA8ICFxAuGIAEGLEDGJcFGNwEGN4EGOAE2AEDwgINEC4YDRiABBixAxixA8ICGRAuGA0YgAQYsQMYlwUY3AQY3gQY4ATYAQPCAgcQLhgNGIAE4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFA&sclient=gws-wiz-serp&safe=active&ssui=on"
+              role="button"><i class="fa-brands fa-spotify"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Row 3 -->
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/peakpx(56).jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Nicki Nicole</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap</h6>
+            <p class="card-text">Nicki Nicole is one of my favorite Rap artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?sca_esv=566617571&rlz=1CAHUVK_enUS1057&q=nicki+nicole+songs&spell=1&sa=X&ved=2ahUKEwibgevRireBAxV0MDQIHbh2CfEQBSgAegQICBAB&biw=1536&bih=740&dpr=1.25&safe=active&ssui=on"
+              role="button"><i class="fa-brands fa-soundcloud"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/dababy.jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Da Baby</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap</h6>
+            <p class="card-text">Da Baby is one of my favorits Rap artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=da+baby+songs&rlz=1CAHUVK_enUS1057&oq=da+baby+songs&aqs=chrome..69i57j0i10i512l4j0i512j0i10i512l2j0i390i650l2.4947j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+              role="button"><i class="fa-brands fa-soundcloud"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="../assets/images/tjay.jpg" class="img-thumbnail">
+        <div class="card text-center mb-5">
+          <div class="card-body">
+            <h5 class="card-title">Lil Tjay</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Hip-Hop & Rap</h6>
+            <p class="card-text">Lil Tjay is one of my favorits Rap artists.</p>
+            <a href="../roots/item1.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">View More</a>
+            <a class="btn btn-outline-dark btn-sm btn-floating m-1"
+              href="https://www.google.com/search?q=lil+tjay+songs&rlz=1CAHUVK_enUS1057&oq=lil+&aqs=chrome.0.69i59l4j69i57j69i60l2j69i61.1709j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+              role="button"><i class="fa-brands fa-soundcloud"></i></a>
+            <a href="../roots/about.html" class="btn btn-outline-dark btn-sm" tabindex="-1" role="button">About &
+              Credits</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../add-content/cata.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

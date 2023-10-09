@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>CS50B Week04</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CS50B Week04</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="css/item4.css">
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Laila:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" href="../css/item4.css">
+</head>
 
-<nav class="navbar navbar-expand-lg sticky-top bg-*">
+<body>
+
+  <div class="header-container">
+    <div class="scroll-progress mt-1"></div>
+  </div>
+  
+  <nav class="navbar navbar-expand-lg sticky-top bg-*">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Fallout Music Co.</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -20,35 +33,150 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               Featured Genres
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="roots/item1.html">Hip-Hop & Rap</a></li>
+              <li><a class="dropdown-item" href="../roots/item1.html">Hip-Hop & Rap</a></li>
               <hr>
-              <li><a class="dropdown-item" href="roots/item2.html">Underground</a></li>
+              <li><a class="dropdown-item" href="../roots/item2.html">Underground</a></li>
               <hr>
-              <li><a class="dropdown-item" href="roots/item3.html">Alternative</a></li>
+              <li><a class="dropdown-item" href="../roots/item3.html">Alternative</a></li>
               <hr>
-              <li><a class="dropdown-item" href="roots/item4.html">Oldies</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="roots/item5.html">Country</a></li>
+              <li><a class="dropdown-item" href="../roots/item4.html">Country</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="roots/about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="../roots/catalog.html">Catalog List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../roots/about.html">About & Credits</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-  </body>
+
+  <!--JumboTron -->
+  <div class="jumbotron jumbo-picture text-center mb-5 mt-5">
+    <h1 class="text-center">Favorite Country Artists</h1>
+    <p class="text-center"><strong>View my favorite artists from this genre!</strong></p>
+    <a href="../index.html" class="btn btn-light btn-lg mt-5 mb-5" tabindex="-1" role="button">Go Home</a>
+  </div>
+  <!--JumboTron End-->
+
+  <main class="mt-5 my-5">
+    <ul id="cards mb-5">
+      <li class="card" id="card_1">
+        <div class="card__content">
+          <div>
+            <h2>Morgan Wallen</h2>
+            <p>Morgan Wallen's songs "Flower Shops", "Wasten on You", "You Proof", and "Whiskey Glasses" are my favorite songs by him!</p>
+            <cite>License: Wallpaper use only, DMCA <a class="card-link"
+                href="https://sheridancollege.libguides.com/findingimages/copyright#:~:text=Many%20people%20like%20to%20use,licence%20or%20payment%20to%20use.">Image
+                Via
+                @Google Images</a></cite>
+            <hr>
+            <p><a
+                href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDfPK8krLDY1YPTizc0vSk_MUyhPzMlJzQMAkSAJ9Q&q=morgan+wallen&rlz=1CAHUVK_enUS1057&oq=morgan+wallen&aqs=chrome.1.69i59j46i433i512j0i433i512j0i131i433i512j0i131i433i650l2j0i131i433i512j69i60.4534j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+                class="btn btn-outline-dark mb-5">Read more</a></p>
+          </div>
+          <figure>
+            <img src="../assets/images/morgan.png" alt="Image description">
+          </figure>
+        </div>
+      </li>
+      <li class="card" id="card_2">
+        <div class="card__content">
+          <div>
+            <h2>Bailey Zimmerman</h2>
+            <p>Bailey Zimmerman's songs "Fall in Love", "Rock and a hard place", and new song "Religiously" are my favorite songs by him!</p>
+            <cite>License: Wallpaper use only, DMCA <a class="card-link"
+                href="https://sheridancollege.libguides.com/findingimages/copyright#:~:text=Many%20people%20like%20to%20use,licence%20or%20payment%20to%20use.">Image
+                Via
+                @Google Images</a></cite>
+            <hr>
+            <p><a
+                href="https://www.google.com/search?q=bailey+zimmerman&rlz=1CAHUVK_enUS1057&oq=bailey&aqs=chrome.0.69i59j46i433i512l2j46i131i433i512l2j46i433i512j0i131i433i650j69i60.1788j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+                class="btn btn-outline-dark mb-5">Read more</a></p>
+          </div>
+          <figure>
+            <img src="../assets/images/bailey2.png" alt="Image description">
+          </figure>
+        </div>
+      </li>
+      <li class="card" id="card_3">
+        <div class="card__content">
+          <div>
+            <h2>Tim Mcgraw</h2>
+            <p>Tim Mcgraw's song "7500 obo" is an all time country favorite for mine</p>
+            <cite>License: Wallpaper use only, DMCA <a class="card-link"
+                href="https://sheridancollege.libguides.com/findingimages/copyright#:~:text=Many%20people%20like%20to%20use,licence%20or%20payment%20to%20use.">Image
+                Via
+                @Google Images</a></cite>
+            <hr>
+            <p><a
+                href="https://www.google.com/search?gs_ssp=eJzj4tTP1Tcwysm2NDVg9OIqycxVyE1OL0osBwBL7Qb2&q=tim+mcgraw&rlz=1CAHUVK_enUS1057&oq=tim+mcgr&aqs=chrome.1.0i355i433i512j46i433i512j69i57j0i433i512j46i512j0i433i512l2j46i512j0i512j0i433i650.3153j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+                class="btn btn-outline-dark mb-5">Read more</a></p>
+          </div>
+          <figure>
+            <img src="../assets/images/tim.png" alt="Image description">
+          </figure>
+        </div>
+      </li>
+      <li class="card" id="card_4">
+        <div class="card__content">
+          <div>
+            <h2>Carrie Underwood</h2>
+            <p>Carrie Underwoods song "Beffore he Cheats" is an all time country favorite of mine</p>
+            <cite>License: Wallpaper use only, DMCA <a class="card-link"
+                href="https://sheridancollege.libguides.com/findingimages/copyright#:~:text=Many%20people%20like%20to%20use,licence%20or%20payment%20to%20use.">Image
+                Via
+                @Google Images</a></cite>
+            <hr>
+            <p><a
+                href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwtSg2NTdg9BJITiwqykxVKM1LSS0qz89PAQB7FQlT&q=carrie+underwood&rlz=1CAHUVK_enUS1057&oq=carrie+&aqs=chrome.1.69i59j46i433i512j69i57j46i433i512j46i175i199i512j46i131i433i512j0i433i512j69i60.1962j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+                class="btn btn-outline-dark mb-5">Read more</a></p>
+          </div>
+          <figure>
+            <img src="../assets/images/carrie.png" alt="Image description">
+          </figure>
+        </div>
+      </li>
+      <li class="card" id="card_5">
+        <div class="card__content">
+          <div>
+            <h2>Lainey Wilson</h2>
+            <p>Lainey Wilson's songs "Heart like a truck", "Watermelon Moonshine", "Dirty Looks", and "Wildflowers, adn wild horses" are my favorite songs by her</p>
+            <cite>License: Wallpaper use only, DMCA <a class="card-link"
+                href="https://sheridancollege.libguides.com/findingimages/copyright#:~:text=Many%20people%20like%20to%20use,licence%20or%20payment%20to%20use.">Image
+                Via
+                @Google Images</a></cite>
+            <hr>
+            <p><a
+                href="https://www.google.com/search?q=lainey+wilson&rlz=1CAHUVK_enUS1057&oq=la&aqs=chrome.0.69i59l2j69i57j0i512j46i131i433i512j69i60j69i61j69i60.1412j1j7&sourceid=chrome&ie=UTF-8&si=ALGXSlal7U-e7J_yWrAwWh37aX5rvWJ2j5FhQGotyOoAOEmJskb7e6KAcXh3H_HhmAVfH7Iao8DGfeFbO-f9quCkVPE3M4YInCzo9V6ai_l7Qqypu_cWEV_4MFzYqGMtDyGNsHbiBy2HKMD9iyRkiI01VN413Ifuv8tiTy_ZIHmGoZAPiUvLkFDruVzNYTdq92BEFHUkMTzAFjhMBOf0MBpDLJsL_B9fMYiNQA-RweQqEKGdwR9ITpFvP8lmUuo9Q_c5yUHE4SbXYMop5SP8MNtiYdi6pnRIYkay9Uoe8r-t0jGu8d5r50_EGW2N01mdemNp7TgbFGTerRSEYC7CEE30o6Wj-JyRdQfGSxysOaBhrYlu_81FOeb_22uVFazYovkzq-6nAvCxUQ-gUImcRF3sM2wtxWTw1eD91a1jlNudMlb5-vDDKJ5V3Q2fW4fSyoPk7ib6MzJyUo3PWzfIRD5QnBoY1-YC0tAOk5KD3OL8qGkCV8oEVQydMkZs-DAmaK0T-AAiDzNq3-3OFGy6asJlJmHDOiyDjnpvTP7iOSNYjYG5TsbQePWuJMog9Jn8jEHlifns5hUUXEPZUG46yjpks-1c0_1eVy8lr8U7oHIOe7yxV0I-Y223kkHnL2jgoXJgaOpk_iwg9QH_4XTdY5eVuYWa7LzERNiVX9YiRwRi49tMN4c0YYaFX9X10BINlDD1m5kVav1btiFEQPKFt60FzAZToyj9cYTMR-ckzr2bvzqvSKHRs_zU9qDS_6gBmwikkDWDBdvPdmi3XIMICA9-PyDS3Na1xrfSlp0v4UGUBiAONY5Mnu7ucFH55FEW6ZUwZrUyW6UfA0ypC11550EbFRy5IJijzlqun93Pl3TiF80OpyJcbU7tHIDds1e55OtgJrGH8e1-Ecw8bq8zWBuZ2uoutjB1pTPTAbzRju8ezdWE92Y5T5h7CL24MjddFY36Ou_kHOO5uAsT7t8tpptTf2TKlCAT-x1qzqoXA1MRai3l3sFVSMmaYWnq0O--WJ38fLiNEE6H6zzB_rP49ZN3p2no0QWzN5t9oJukPmvvfZunfEzAUyOqT-UPB03bffamGnGV7aFnuKYtnVPAkClgcGQqgePwYVYREvNG4Ji0daHaVHArjGe0U1xG9WuBj7C3HM1dV7aFMOOkDCyk7P7q6sfGzrnQgzpbwj7DOZWcKL8R9OsZN88AA4VREn0Lcdu6rMhqzyagNcnVMs9P072C2nVFvmHyQdX7qBHabVBY10_PpjZwKYR1BQLw-I91W823LldVAEKgOhwEWeO9cTgLryss4HsQUJtCJM_g8I7zso5GXB8SXS46CcJYgpnZ7yBrER9tUVmxIksc9fqL8IeqQJT3DPivZqWqFR-yKl6NGIc47r98oHQJtsloUt7v38Tf67_mzxLPlcF3-vBxSojbfhjhuS04x_NktWok-yp3sIcInpK08JKEz4Ygsh7aG_CzYy_SGE-kqEvOWK6eQ7BfBgQJxUomT9btoMPKTJgLZAB1O8ultgfgM2Si5RQQzCs10XQqVZGQt5b086kCfwIxsicx8fA8lIqLnkYYP8Iv3toCmsyf_tAl_QgmNIBBize-u8SJH4Go7suhkSCyXkThXVVoQKOLCvKd5mcS1KnCyekVaEog5r4N2IDjEEogItpRrN_u1xzYt5pIS9DKOwkv66vOH9DkVwHMRYFS6mgdtDotjjAVgpXB3W-TT1tBM2w2fzq5vvyKpNCLqCjg7sjxlqn8gfu7IJsbY9W_Q1vXoLFRysYsJfHvhE6_Iu2zr5-Ae0ynBImZT_2uB5x7Ybk4KN1sgyu0aF5duMGsWuNE4VvOp-0j-7_u31eYp7xPPjuDUiR4jfiT7A6MaCoB8qfT3cE-oP3QShz_3PcBF7zoPKbvLWhEaTW3KaFz7X3Xr4bT-gJlhWOYuiro_YyybFXLZV6fVMSnC8KqxQQxDfYRS51sTnQ4DDZAwQZ8lPaM3IQ0uxduIvLN&ictx=1&ved=2ahUKEwiT6cu1keKBAxUUOTQIHdq6AHIQyNoBKAB6BAgQEAA&clie=1&safe=active&ssui=on"
+                class="btn btn-outline-dark mb-5">Read more</a></p>
+          </div>
+          <figure>
+            <img src="../assets/images/lainey.png" alt="Image description">
+          </figure>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+<script src="../add-content/item4.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -11,20 +11,25 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" >
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body style="background-image:url('assets/images/peakpx(68).jpg'); background-repeat: no-repeat;">
 
+  <div class="header-container">
+<div class="scroll-progress mt-1"></div>
+</div>
+  
   <nav class="navbar navbar-expand-lg sticky-top bg-*">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Fallout Music Co.</a>
+      <a class="navbar-brand text-white">Fallout Music Co.</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
@@ -33,28 +38,28 @@
               Featured Genres
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
+<hr>
               <li><a class="dropdown-item" href="roots/item1.html">Hip-Hop & Rap</a></li>
-
+<hr>
               <li><a class="dropdown-item" href="roots/item2.html">Underground</a></li>
-
+<hr>
               <li><a class="dropdown-item" href="roots/item3.html">Alternative</a></li>
-
-              <li><a class="dropdown-item" href="roots/item4.html">Oldies</a></li>
-
-              <li><a class="dropdown-item" href="roots/item5.html">Country</a></li>
+<hr>
+              <li><a class="dropdown-item" href="roots/item4.html">Country</a></li>
+<hr>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="roots/catalog.html">Catalog List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="roots/about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="roots/about.html">About & Credits</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
+  
   <section class="top">
     <h2 class="mt-5">Welcome To</h2>
     <h1 class="mt-5">Fallout Music Co.</h1>
@@ -62,33 +67,37 @@
 <section id="home">
   <div class="parallax-inner text-center">
                 <br>
-                <h1>Explore, Experience, Enjoy</h1>
-    <h2>Discover New artists and find your favorites.</h2>
+                <h1>Hip-Hop & Rap</h1>
+    <h2>See the Hip-Hop & Rap Artists!</h2>
                 <br>
+    <a href="roots/item1.html" class="this btn btn-light btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="Click to view my favorite artists!">Hip-Hop & Rap Artists</a>
   </div>
 </section>
 <section id="about">
   <div class="parallax-inner text-center">
                 <br>
-                <h1>Fallout Music Co.</h1>
-    <h2>Our mission is to provide the hottest hits today and yesterday's favorites.</h2>
+                <h1>Underground</h1>
+    <h2>See the Underground Artists!</h2>
                 <br>
+    <a href="roots/item1.html" class="this btn btn-light btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="Click to view my favorite artists!">Underground Artists</a>
   </div>
 </section>
 <section id="why">
   <div class="parallax-inner text-center">
                 <br>
-                <h1>Your Musical Selections</h1>
-    <h2>Listen to your favorite songs and discover new ones.</h2>
+                <h1>Alternative</h1>
+    <h2>See my favorite Alternative Artists!</h2>
                 <br>
+    <a href="roots/item1.html" class="this btn btn-light btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="Click to view my favorite artists!">Alternative Artists</a>
   </div>
 </section>
 <section id="discover">
   <div class="parallax-inner text-center">
                 <br>
-                <h1>Discover</h1>
-    <h2>We encourage you to explore our site and view the musical selctions we offer.</h2>
+                <h1>Country</h1>
+    <h2>See my favorite Country Artists!</h2>
                 <br>
+    <a href="roots/item1.html" class="this btn btn-light btn-lg" role="button" data-toggle="tooltip" data-placement="right" title="Click to view my favorite artists!">Country Artists</a>
   </div>
 </section>
 
@@ -278,6 +287,7 @@
 </footer>
 <!-- Footer -->
 
+     <script src="add-content.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

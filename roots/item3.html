@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>CS50B Week04</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="css/item3.css">
-  </head>
-  <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" href="../css/item3.css">
+  <title>Alternative</title>
+</head>
 
-<nav class="navbar navbar-expand-lg sticky-top bg-*">
+<body>
+
+  <div class="header-container">
+    <div class="scroll-progress mt-1"></div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-*">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Fallout Music Co.</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -20,35 +30,312 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               Featured Genres
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="roots/item1.html">Hip-Hop & Rap</a></li>
+              <li><a class="dropdown-item" href="../roots/item1.html">Hip-Hop & Rap</a></li>
               <hr>
-              <li><a class="dropdown-item" href="roots/item2.html">Underground</a></li>
+              <li><a class="dropdown-item" href="../roots/item2.html">Underground</a></li>
               <hr>
-              <li><a class="dropdown-item" href="roots/item3.html">Alternative</a></li>
+              <li><a class="dropdown-item" href="../roots/item3.html">Alternative</a></li>
               <hr>
-              <li><a class="dropdown-item" href="roots/item4.html">Oldies</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="roots/item5.html">Country</a></li>
+              <li><a class="dropdown-item" href="../roots/item4.html">Country</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="roots/about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="../roots/catalog.html">Catalog List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../roots/about.html">About & Credits</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-  </body>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/images/peakpx(67).jpg" class=" w-100" alt="rap">
+        <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+          <h2 class="bg-dark bg-opacity-50 py-2 px-4">Fallout Music Co.</h2>
+          <p class="bg-dark bg-opacity-50 py-2 px-4">The following images are some of my favorite artists for the
+            Alternative genre</p>
+          <a href="../roots/item1.html" class="btn btn-light px-4 py-2 rounded-0">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/images/threedaysgrace.jpg" class=" w-100" alt="hip">
+        <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+          <h2 class="bg-dark bg-opacity-50 py-2 px-4">Three Days Grace</h2>
+          <p class="bg-dark bg-opacity-50 py-2 px-4">Three Days Grace is a band I have loved for years now and listen to
+            when the mood strikes</p>
+          <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwKirKKTNg9BIoyShKTVVISawsVkgvSkxOBQCIPAmd&q=three+days+grace&rlz=1CAHUVK_enUS1057&oq=three+days&aqs=chrome.1.0i131i355i433i512j46i131i433i512j69i57j46i512l2j69i60j69i61l2.2730j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"
+            class="btn btn-light px-4 py-2 rounded-0">Learn More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/images/morebillie.jpg" class=" w-100" alt="hop">
+        <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+          <h2 class="bg-dark bg-opacity-50 py-2 px-4">Billie Eilish</h2>
+          <p class="bg-dark bg-opacity-50 py-2 px-4">Billie Eilish first caught my attention with Ocean Eyes and this
+            girl has kept that attention!</p>
+          <a
+            href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDY3rSxILy82YPTiTcrMyclMVUjNzMkszgAAjvcJ3w&q=billie+eilish&rlz=1CAHUVK_enUS1057&oq=billie+&aqs=chrome.1.0i355i433i512j46i433i512j69i57j46i433i512j0i433i512j69i61l3.2271j0j9&sourceid=chrome&ie=UTF-8&safe=active&ssui=on" class="btn btn-light px-4 py-2 rounded-0">Learn
+            More</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/images/melanie2.jpg" class=" w-100" alt="pic">
+        <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
+          <h2 class="bg-dark bg-opacity-50 py-2 px-4">Melanie Martinez</h2>
+          <p class="bg-dark bg-opacity-50 py-2 px-4">Melanie Martinez has always been a part of my musical selections.
+            She has this bitter crazy sad girl vibe that I haven't stopped listening to over the years</p>
+          <a
+            href="https://www.google.com/search?gs_ssp=eJzj4tLP1TcoTDKpMDIyYPQSyE3NSczLTFXITSwqycxLrQIAi1QJ4w&q=melanie+martinez&rlz=1CAHUVK_enUS1057&oq=melanie&aqs=chrome.2.69i57j46i131i433i512j46i433i512j46i131i433i512l2j46i433i512j69i60l2.2527j0j4&sourceid=chrome&ie=UTF-8&safe=active&ssui=on" class="btn btn-light px-4 py-2 rounded-0">Learn
+            More</a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="home">
+      <div class="parallax-inner text-center">
+        <br>
+        <h1>Cry Baby</h1>
+        <h2>This album has always been one of my favorites by Melanie</h2>
+        <br>
+      </div>
+    </section>
+    <section id="about">
+      <div class="parallax-inner text-center">
+        <br>
+        <h1>idontwannabeyouanymore</h1>
+        <h2>is one of my favorite songs by Billie Eilish</h2>
+        <br>
+      </div>
+    </section>
+    <section id="why">
+      <div class="parallax-inner text-center">
+        <br>
+        <h1>Beggin'</h1>
+        <h2>is my favorite song by Maneskin next to Monster</h2>
+        <br>
+      </div>
+    </section>
+    <section id="discover">
+      <div class="parallax-inner text-center">
+        <br>
+        <h1>Take me to Church</h1>
+        <h2>is my favorite song by Hozier both acoustic and the produced track</h2>
+        <br>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center" style="background-image: url('../assets/images/peakpx(71).jpg');">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <div class="mb-4 mt-5">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" href="#!" role="button"><i
+              class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" href="#!" role="button"><i
+              class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" href="#!" role="button"><i
+              class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" href="#!" role="button"><i
+              class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" href="#!" role="button"><i
+              class="fab fa-linkedin-in"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" href="https://github.com/Josy-blackOps/GitRepl"
+            role="button"><i class="fab fa-github"></i></a>
+        </div>
+        <!-- Div: Social media -->
+
+        <!-- Div: Form -->
+        <div class="form">
+          <form action="#">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2" style="color: white;">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form5Example21" class="form-control">
+                  <label class="form-label" for="form5Example21">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </div>
+        <!-- Div: Form -->
+
+        <!-- Div: Text -->
+        <div class="mb-4">
+          <p style="color: white;">
+            Uhhh. I used images from <a href="https://www.peakpx.com/">@PeakPx</a> and have downloaded them from that
+            site. I do not take responsibility for any images taken of artists without permission so do NOT shoot the
+            messenger okay?! All rights reserved to whoever in the pictures for all I care....
+          </p>
+        </div>
+        <!-- Div: Text -->
+
+        <!-- Div: Links -->
+        <div class="links">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color: white;">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color: white;">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color: white;">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color: white;">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: white;">
+        © 2023 Copyright:
+        <a class="text-white" href="https://github.com/">Find more of my work on GitHub!</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="../add-content/item3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>

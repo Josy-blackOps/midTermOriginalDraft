@@ -4,65 +4,168 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>CS50B Week04</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-  <link rel="stylesheet" href="css/about.css">
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" href="../css/about.css">
+    <title>About & Credits</title>
 </head>
 
 <body>
 
+  <div class="header-container">
+    <div class="scroll-progress mt-1"></div>
+  </div>
+
   <nav class="navbar navbar-expand-lg sticky-top bg-*">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Fallout Music Co.</a>
+      <a class="navbar-brand">Fallout Music Co.</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
               Featured Genres
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="roots/item1.html">Hip-Hop & Rap</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="roots/item2.html">Underground</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="roots/item3.html">Alternative</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="roots/item4.html">Oldies</a></li>
-              <hr>
-              <li><a class="dropdown-item" href="roots/item5.html">Country</a></li>
+              <li><a class="dropdown-item" href="../roots/item1.html">Hip-Hop & Rap</a></li>
+
+              <li><a class="dropdown-item" href="../roots/item2.html">Underground</a></li>
+
+              <li><a class="dropdown-item" href="../roots/item3.html">Alternative</a></li>
+
+              <li><a class="dropdown-item" href="../roots/item4.html">Country</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="roots/about.html">About</a>
+            <a class="nav-link active" aria-current="page" href="../roots/catalog.html">Catalog List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../roots/about.html">About & Credits</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="top">
-    <h1 class="mt-5">Fallout Music Co.</h1>
-    
+  <section id="hero">
+    <div class="wrap">
+      <h1 class="about">About & Credits</h1>
+      <hr>
+      <h2 class="head2">This website has used several images, and quotes from various sites that the creater has
+        referenced in order
+        to provide the best
+        possible design and content for her users.</h2>
+      <a href="https://github.com/Josy-blackOps" class="this btn btn-dark btn-lg" role="button">View more of
+        @Josy-blackOps</a>
+    </div>
   </section>
 
- 
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="w-100 shadow" src="../assets/images/peakpx(50).jpg" />
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="p-3">
+          <h5 class="display-4 text-center">PeakPx - HD wallpapers free download</h5>
+          <br>
+          <p class="lead">All of my images were downloaded from the <a class="links"
+              href="https://www.peakpx.com/">@PeakPx</a> website.</p>
+          <p class="lead">PeakPx' terms and conditions on the use of their images is as follows:
+            <br>
+            <em> "This image is royalty free for personal and commercial use, You can copy, modify, distribute and
+              perform the image, all without asking permission. But we would appreciate if you could place a link refer
+              to peakpx or spread it in social media. You can paste HTML code below into your blog or website: image via
+              <a class="links" href="https://www.peakpx.com">@Peakpx</a>"</em>
+            <br>
+            Due to the nature of these terms and conditions I have given credit to <strong> <a class="links"
+                href="https://www.peakpx.com/">@PeakPx</a></strong> for providing the images used for this website.
+          </p>
+          <a href="https://www.zoominfo.com/c/peakpx/480533518" class="btn btn-dark btn-sm">Read More</a>
+        </div>
+      </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="../assets/images/quote3.jpg" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="lc-block mb-3">
+            <div editable="rich">
+              <h2 class="fw-bold display-5">BrainyQuote - Famous Quotes</h2>
+            </div>
+          </div>
+
+          <div class="lc-block mb-3 text-center">
+            <div editable="rich">
+              <p class="lead">Most of my quotes were found on the <a class="links"
+                  href="https://www.brainyquote.com/">@brainyquote</a> website.
+              </p>
+              <p class="lead">BrainyQuote uses citation embedment using either APA, Chicago, or MLA citation styles. I
+                used APA citation because it gave clear recognition to the author
+                of the quote and also gave clear recognition to their own site.
+                <br>
+                I also used other
+                articles created by independent sources
+                and they were for the Coi Leray quote <a class="links"
+                  href="https://kaynuli.com/coi-leray-lyrics/">@kanyuli</a>
+                and the <br> Pop Smoke quote <a class="links"
+                  href="https://reneturrek.com/pop-smoke-quotes/">@reneturrek</a>. These websites
+                provided the quotes used throughout my pages.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="https://www.brainyquote.com/quotes/vince_lombardi_385070?src=t_inspirational" class="btn btn-dark btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="container my-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="w-100 shadow" src="../assets/images/fonts.jpg" />
+      </div>
+      <div class="col-lg-6 text-center">
+        <div class="p-3">
+          <h5 class="display-4 text-center">Google Fonts - API </h5>
+          <br>
+          <p class="lead">All of my fonts were imported from the <a class="links" href="https://fonts.google.com/">@Google-Fonts</a> website.
+          <p class="lead">All of my fonts were imported from the <a class="links" href="https://fonts.google.com/">@Google-Fonts</a> website.
+          Google Fonts - API's terms and conditions on the use of their fonts are as follows:
+            <br>
+            <em>" All fonts are released under open source licenses. You can use them in any non-commercial or commercial project. With so many unique fonts to use, you're bound to find something you like!"</em>
+            <br>
+          Due to the nature of these terms and conditions I have given credit to <a class="links" href="https://fonts.google.com/">@Google-fonts</a>for providing the fonts used for this website.
+          <a href="https://developers.google.com/fonts/docs/developer_api#:~:text=It%20allows%20apps%20to%20query,by%20trend%2C%20or%20by%20popularity." class="btn btn-dark btn-sm mt-4">Read More</a>
+        </div>
+      </div>
+    </div>
+      </div>
+  </div>
+    
+    <script src="../add-content/about.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

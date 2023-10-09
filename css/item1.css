@@ -2,14 +2,10 @@
   font-family: 'Tangerine', serif;
   font-size: 45px;
   text-shadow: 4px 4px 4px grey;
-  color: white;
 }
 .nav-item{
   font-family: 'Trirong', serif;
   font-size: 20px;
-}
-nav .navbar-nav li a{
-  color: white !important;
 }
 @media screen and (orientation: landscape) {
   .carousel img {
@@ -65,7 +61,7 @@ section {
   background-image: url('../assets/images/peakpx(80).jpg');
 }
 #discover {
-  background-image: url('../assets/images/peakpx(79).jpg');
+  background-image: url('../assets/images/babydurk.jpg');
 }
 .parallax-inner{
     padding-top: 20%;
@@ -88,4 +84,21 @@ h1{
   h2{
     font-size: 50px;
   }
+}
+.header-container {
+  width: 100%;
+  height: 8px;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.scroll-progress {
+  width: 0px;
+  height: 5px;
+  background-color: #F18805;
+}
+.navbar{
+height: 60px !important;
 }

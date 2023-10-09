@@ -7,299 +7,210 @@
   font-family: 'Trirong', serif;
   font-size: 20px;
 }
-        body{
-            height:100vh ;
-        }
-         /*--------------COLLAGE------------*/
-	 .collage{
-		text-align: center;
-		color: #fff;
-		background-image: url('../assets/images/peakpx(68).jpg');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-    padding-bottom: 350px;
-    padding-top: 350px;
-    position: relative;
-	 }
-	 
-	 .collage span{
-		font-size: 60px;
-	 }
-	 .collage .text-sm{
-		font-size: 17px;
-		width: 100%;
-		padding: 0 29%;
-	 }
-
-     .img-thumbnail {
-    padding: 0.25rem;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;}
-
-	 .collage img{
-		width: 250px;
-
-	 }
-	 .collage .img-1{
-		position: absolute;
-		top: 100px;
-		left: 98px;
-		transform: rotate(35deg);
-		
-	 }
-	 .img-1.active{
-		animation: animation1 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-2{
-		position: absolute;
-    top: 0;
-    left: 27%;
-    transform: rotate(10deg);
-	
-	 }
-	 .img-2.active{
-		animation: animation2 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-3{
-		position: absolute;
-    top: 125px;
-    right: 160px;
-    transform: rotate(-35deg);
-	 }
-	 .img-3.active{
-		animation: animation3 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-4{
-		position: absolute;
-    bottom: 0px;
-    left: 115px;
-    transform: rotate(-35deg);
-	 }
-	 .img-4.active{
-		animation: animation4 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-5{
-		position: absolute;
-    bottom: 0;
-    left: 45%;
-    transform: rotate(-12deg);
-	 }
-	 .img-5.active{
-		animation: animation5 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-6{
-		z-index: 1;
-		position: absolute;
-    bottom: 0;
-    right: 240px;
-    transform: rotate(35deg);
-	 }
-	 .img-6.active{
-		animation: animation6 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-7{
-		position: absolute;
-		bottom: 28%;
-		left: 9%;
-		transform: rotate(11deg);
-	 }
-	 .img-7.active{
-		animation: animation7 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-8{
-		position:  absolute;
-		bottom: 23%;
-		right: 10%;
-		transform: rotate(-16deg);
-	 }
-	 .img-8.active{
-		animation: animation8 1.5s ease-in-out 0s 1 ;
-	 }
-	 .collage .img-9{
-		position:  absolute;
-		top: 5%;
-		right: 23%;
-		transform: rotate(-16deg);
-	 }
-	 .img-9.active{
-		animation: animation8 1.5s ease-in-out 0s 1 ;
-	 }
-
-	 @keyframes animation1 {
-		0% {
-			opacity: 0;
-			transform: translate(190%,70%) rotate(-200deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(35deg);
-		}
-	}
- 
-	@keyframes animation2 {
-		0% {
-			opacity: 0;
-			transform: translate(0%,70%) rotate(-360deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(10deg);
-		}
-	}
- 
-	@keyframes animation3 {
-		0% {
-			opacity: 0;
-			transform: translate(-190%,70%) rotate(-360deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(-35deg);
-		}
-	}
-	@keyframes animation4 {
-		0% {
-			opacity: 0;
-			transform: translate(190%,-70%) rotate(-360deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(-35deg);
-		}
-	}
-	@keyframes animation5 {
-		0% {
-			opacity: 0;
-			transform: translate(0%,-70%) rotate(-360deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(-12deg);
-		}
-	}
-	@keyframes animation6 {
-		0% {
-			opacity: 0;
-			transform: translate(-190%,-70%) rotate(-360deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(35deg);
-		}
-	}
-	@keyframes animation7 {
-		0% {
-			opacity: 0;
-			transform: translate(-190%,-70%) rotate(-360deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(11deg);
-		}
-	}
-	@keyframes animation8 {
-		0% {
-			opacity: 0;
-			transform: translate(-190%,-70%) rotate(-360deg);
-		}
-	
-		100% {
-			opacity: 1;
-			transform: translateX(0) rotate(-16deg);
-		}
-	}
-@media all and (max-width:1024px){
-	.collage .img-1{
-		left:0;
-	}
-	.collage .img-7,.collage .img-4{
-		left:-70px;
-	}
-	.collage .img-8,.collage .img-6,.collage .img-3{
-		right: -90px;
-	}
-}
-@media all and (max-width:768px){
-	.collage .img-1{
-		top:-25px;
-		left: -40px;
-	}
-	.collage .img-2{
-		top:-75px;
-		left:185px;
-	}
-	.collage .img-9{
-		top:-85px;
-		right:165px;
-	}
-	.collage .img-5,.collage .img-9{
-		top:-85px;
-		right: -45px;
-	}
-	.collage .img-7{
-		top:170px;
-	}
-	.collage .img-4{
-		transform: rotate(10deg);
-		top:160px;
-		left:160px;
-	
-	}
-	.collage .img-6{
-		top: 160px;
-		right: 135px;
-		transform: rotate(-10deg);
-	}
-	.collage .img-8{
-		display:none;
-	}
-	.p-tb350{
-		padding-top: 480px;
-		padding-bottom: 50px;
-	}
-}
-@media all and (max-width:480px){
-	.slide-right{
-		animation: none;
-	}
-
-}
-    h1{
-  font-family: 'Tangerine', serif;
-  font-size: 75px;
-  text-shadow: 2px 2px 2px #FAFAFA;
-  background-image: linear-gradient(
-    -225deg,
-    #023436 0%,
-    #BF0603 29%,
-    #F18805 67%,
-    #D81E5B 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
-  display: inline-block;
+body{
+    background-repeat: no-repeat;
+    background-color: #CED3DC;
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
   }
+  .jumbo-picture {
+    background-image: url('../assets/images/jumbo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+  
+  .jumbo-picture > h1 {
+    color: white;
+    font-size: 70px;
+    font-family: 'Uncial Antiqua', cursive;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  .jumbo-picture > p {
+    color: white;
+    font-size: 50px;
+    font-family: 'Poiret One', cursive;
+    text-shadow: 2px 2px 2px black;
+  }
+h2{
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 90px;
+    text-shadow: 2px 2px 2px black;
+}
+:root {
+	--card-height: 40vw;
+	--card-margin: 4vw;
+	--card-top-offset: 1em;
+	--numcards: 4;
+	--outline-width: 0px;
+}
+
+#cards {
+	padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+	margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+
+#card_1 {
+	--index: 1;
+}
+
+#card_2 {
+	--index: 2;
+}
+
+#card_3 {
+	--index: 3;
+}
+
+#card_4 {
+	--index: 4;
+}
+
+#card_5 {
+	--index: 5;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+	.card {
+		--index0: calc(var(--index) - 1); /* 0-based index */
+		--reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+		--reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+	}
+	
+	.card__content {
+		transform-origin: 50% 0%;
+		will-change: transform;
+
+		--duration: calc(var(--reverse-index0) * 1s);
+		--delay: calc(var(--index0) * 1s);
+
+		animation: var(--duration) linear scale var(--delay) forwards;
+		animation-timeline: cards-element-scrolls-in-body;
+	}
+
+	@keyframes scale {
+		to {
+			transform:
+				scale(calc(
+					1.1
+					-
+					calc(0.1 * var(--reverse-index))
+				));
+		}
+	}
+}
+
+/** DEBUG **/
+
+#debug {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+}
+#debug::after {
+  content: " Show Debug";
+  margin-left: 1.5em;
+  color: white;
+  white-space: nowrap;
+}
+
+#debug:checked ~ main {
+  --outline-width: 1px;
+}
+
+
+/** PAGE STYLING **/
+
+header,
+main {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+header {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+
+#cards {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--numcards), var(--card-height));
+	gap: var(--card-margin);
+}
+
+.card {
+	outline: var(--outline-width) solid hotpink;
+}
+
+.card__content {
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	color: rgb(10, 5, 7);
+	border-radius: 1em;
+	overflow: hidden;
+	display: grid;
+	grid-template-areas: "text img";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	align-items: stretch;
+	outline: var(--outline-width) solid lime;
+}
+
+.card__content > div {
+	grid-area: text;
+	width: 80%;
+	place-self: center;
+	text-align: left;
+
+	display: grid;
+	gap: 1em;
+	place-items: start;
+}
+
+.card__content > figure {
+	grid-area: img;
+	overflow: hidden;
+}
+
+.card__content > figure > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card-link{
+	text-decoration: none;
+	color: #6B86BC;
+}
+.header-container {
+  width: 100%;
+  height: 8px;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+.scroll-progress {
+  width: 0px;
+  height: 5px;
+  background-color: #BC2C1A;
+}
+.btn{
+  text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
 }
